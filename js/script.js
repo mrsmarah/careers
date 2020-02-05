@@ -3,11 +3,20 @@ function job ()
 {
     var experience = prompt("How much experience years do you have ?");
     console.log(experience);
+
+  
     var overtime = prompt("Can you work for an overtime ?");
     console.log(overtime);
+    while(overtime.toLocaleLowerCase()!== "yes" && overtime !== "no") {
+        overtime = prompt("Can you work for an overtime ?");
+    }
     var pressure = prompt("Can you work under pressure ?");
     console.log(pressure);
+    while(pressure !== "yes" && pressure !== "no") {
+        pressure = prompt("Can you work under pressure ?");
+    }
     var result; 
+   
     
     if (experience >= 5 && overtime == "yes" && pressure == "yes" ) {     
         result = 'Your apportunity to get this job is High';   
