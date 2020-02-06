@@ -20,7 +20,7 @@ function job ()
     var i ="";
 
 
-    for ( var i = 0; i <= experience; i++)
+    for ( i = 0; i < experience; i++)
     {
        if (overtime === "yes" && pressure === "yes" ) {
        ( item = item + '<img src="images/download.png">');}
